@@ -41,12 +41,15 @@ module tt_um_my_project #( parameter MAX_COUNT = 24'd10_000_000 ) (
                 // reset
                 second_counter <= 0;
 
+
                 // increment digit
                 digit <= digit + 1'b1;
+
 
                 // only count from 0 to 9
                 if (digit == 9)
                     digit <= 0;
+                    
 
             end else
                 // increment counter
